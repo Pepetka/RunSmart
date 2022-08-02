@@ -1,0 +1,35 @@
+@font-face {
+	font-family: "MuseoModerno";
+	font-style: normal;
+	font-weight: 300;
+	src: local("MuseoModerno"), url("../fonts/MuseoModerno-Light.woff2") format("woff2"),
+		url("../fonts/MuseoModerno-light.woff") format("woff"),
+		url("../fonts/MuseoModerno-light.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "MuseoModerno";
+	font-style: normal;
+	font-weight: 400;
+	src: local("MuseoModerno"), url("../fonts/MuseoModerno-regular.woff2") format("woff2"),
+		url("../fonts/MuseoModerno-regular.woff") format("woff"),
+		url("../fonts/MuseoModerno-regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "MuseoModerno";
+	font-style: normal;
+	font-weight: 500;
+	src: local("MuseoModerno"), url("../fonts/MuseoModerno-medium.woff2") format("woff2"),
+		url("../fonts/MuseoModerno-medium.woff") format("woff"),
+		url("../fonts/MuseoModerno-medium.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "MuseoModerno";
+	font-style: normal;
+	font-weight: 700;
+	src: local("MuseoModerno"), url("../fonts/MuseoModerno-bold.woff2") format("woff2"),
+		url("../fonts/MuseoModerno-bold.woff") format("woff"),
+		url("../fonts/MuseoModerno-bold.ttf") format("truetype");
+}

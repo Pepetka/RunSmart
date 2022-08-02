@@ -1,0 +1,22 @@
+@import "./base/fonts";
+@import "./base/var";
+
+body {
+	font-family: "MuseoModerno", sans-serif;
+	font-weight: 400;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	max-width: 942px;
+	width: 85%;
+	margin: 0 auto;
+}
+
+@import "./components/buttons";
+@import "./components/header";
+@import "./components/first_screen";
+@import "./components/adventages";
