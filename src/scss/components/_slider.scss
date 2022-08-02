@@ -1,0 +1,41 @@
+.slider {
+	margin: 0 auto;
+	background-color: $bg_color;
+	padding: 81px 0;
+
+	&__wrapper {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__slides {
+		width: 750px;
+		height: 580px;
+		overflow: hidden;
+		margin: 0 50px;
+		position: relative;
+	}
+
+	&__slides-wrapper {
+		width: 2250px;
+		display: flex;
+		align-items: center;
+		position: absolute;
+		left: 0;
+		left: -200%;
+	}
+
+	&__slide {
+		img {
+			width: 750px;
+		}
+	}
+
+	&__prev,
+	&__next {
+		cursor: pointer;
+		height: 580px;
+		border: none;
+		background-color: $bg_color;
+	}
+}

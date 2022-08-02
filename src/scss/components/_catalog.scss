@@ -1,0 +1,158 @@
+.catalog {
+	background-color: $bg_color;
+	text-align: center;
+	color: $dark_text_color;
+	padding-bottom: 79px;
+
+	&__header {
+		font-weight: 400;
+		font-size: 30px;
+		text-transform: uppercase;
+	}
+
+	&__filter {
+		display: flex;
+		justify-content: center;
+		margin-top: 46px;
+
+		button {
+			cursor: pointer;
+			width: 220px;
+			height: 50px;
+			border: 2px solid #d0d0d0;
+			font-weight: 400;
+			font-size: 18px;
+			color: #6b6b6b;
+			text-transform: uppercase;
+			transform: skewX(-30deg);
+
+			div {
+				transform: skewX(30deg);
+			}
+
+			&:nth-child(2) {
+				margin: 0 10px;
+			}
+
+			&.active-filter {
+				background-color: $btn_color;
+				color: $light_text_color;
+			}
+		}
+	}
+
+	&__cards {
+		display: grid;
+		grid-template-rows: repeat(2, 1fr);
+		grid-template-columns: repeat(3, 1fr);
+		gap: 19px 17px;
+		margin-top: 57px;
+	}
+}
+.card {
+	width: 303px;
+	height: 442px;
+	border: 2px solid #e8e8e8;
+	padding: 20px;
+
+	img {
+		width: 140px;
+	}
+
+	a {
+		font-weight: 300;
+		font-size: 14px;
+		color: $link_color;
+		text-decoration: underline;
+		text-transform: uppercase;
+
+		&:hover {
+			color: $link_color;
+		}
+	}
+
+	hr {
+		margin-top: 19px;
+		background-color: #e8e8e8;
+		width: 260px;
+		height: 2px;
+		border: none;
+	}
+
+	&__header {
+		font-weight: 700;
+		font-size: 16px;
+	}
+
+	&__text {
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 22px;
+		margin-top: 15px;
+		margin-bottom: 10px;
+	}
+
+	&__buying-info {
+		margin-top: 18px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+
+	&__price {
+		text-align: start;
+
+		span {
+			display: block;
+			font-weight: 300;
+			font-size: 14px;
+			color: #555555;
+			text-decoration: line-through;
+		}
+
+		font-weight: 700;
+		font-size: 20px;
+	}
+
+	&__prduct {
+		height: 320px;
+	}
+
+	&__slider {
+		height: 320px;
+		overflow: hidden;
+		position: relative;
+	}
+
+	&__wrapper {
+		height: 640px;
+		position: absolute;
+		top: -100%;
+	}
+
+	&__info {
+		height: 320px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	&__list {
+		list-style-type: square;
+		text-align: start;
+		margin-left: 17px;
+
+		li {
+			color: #c70101;
+			margin-bottom: 3px;
+		}
+
+		span {
+			font-weight: 300;
+			font-size: 14px;
+			line-height: 21px;
+			color: #555555;
+		}
+	}
+}

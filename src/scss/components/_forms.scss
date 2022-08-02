@@ -1,0 +1,27 @@
+.form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 303px;
+
+	&__input {
+		width: 303px;
+		height: 54px;
+		background-color: #fff;
+		border: none;
+		border-radius: 5px;
+		margin-bottom: 13px;
+		padding-left: 20px;
+		box-sizing: border-box;
+
+		&:last-child {
+			margin-bottom: 17px;
+		}
+
+		&::placeholder {
+			font-weight: 400;
+			font-size: 14px;
+			color: $placeholder_color;
+		}
+	}
+}

@@ -8,6 +8,7 @@ body {
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 .container {
@@ -17,6 +18,11 @@ body {
 }
 
 @import "./components/buttons";
+@import "./components/forms";
+
 @import "./components/header";
 @import "./components/first_screen";
 @import "./components/adventages";
+@import "./components/consultation";
+@import "./components/slider";
+@import "./components/catalog";
