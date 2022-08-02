@@ -17,15 +17,16 @@
 	}
 
 	&__slides-wrapper {
-		width: 2250px;
 		display: flex;
 		align-items: center;
 		position: absolute;
 		left: 0;
-		left: -200%;
+		left: -0px;
+		transition: all 0.5s;
 	}
 
 	&__slide {
+		width: 750px;
 		img {
 			width: 750px;
 		}
@@ -35,7 +36,17 @@
 	&__next {
 		cursor: pointer;
 		height: 580px;
+		width: 50px;
 		border: none;
 		background-color: $bg_color;
+		position: relative;
+	}
+
+	&__prev:hover {
+		left: -5px;
+	}
+
+	&__next:hover {
+		right: -5px;
 	}
 }

@@ -128,7 +128,8 @@
 	&__wrapper {
 		height: 640px;
 		position: absolute;
-		top: -100%;
+		top: -320px;
+		transition: all 0.5s;
 	}
 
 	&__info {
