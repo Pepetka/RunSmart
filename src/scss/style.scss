@@ -4,6 +4,7 @@
 body {
 	font-family: "MuseoModerno", sans-serif;
 	font-weight: 400;
+	overflow-x: hidden;
 }
 * {
 	margin: 0;
@@ -12,7 +13,7 @@ body {
 }
 
 .container {
-	max-width: 942px;
+	max-width: 950px;
 	width: 85%;
 	margin: 0 auto;
 }

@@ -43,9 +43,10 @@
 
 	&__cards {
 		display: grid;
-		grid-template-rows: repeat(2, 1fr);
-		grid-template-columns: repeat(3, 1fr);
+		// grid-template-rows: repeat(auto-fill, 1fr);
+		grid-template-columns: repeat(auto-fill, 303px);
 		gap: 19px 17px;
+		justify-content: center;
 		margin-top: 57px;
 	}
 }
@@ -59,16 +60,13 @@
 		width: 140px;
 	}
 
-	a {
+	&__link {
+		cursor: pointer;
 		font-weight: 300;
 		font-size: 14px;
 		color: $link_color;
 		text-decoration: underline;
 		text-transform: uppercase;
-
-		&:hover {
-			color: $link_color;
-		}
 	}
 
 	hr {
@@ -127,6 +125,9 @@
 
 	&__wrapper {
 		height: 640px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 		position: absolute;
 		top: -320px;
 		transition: all 0.5s;
@@ -154,6 +155,17 @@
 			font-size: 14px;
 			line-height: 21px;
 			color: #555555;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.catalog {
+		&__filter {
+			button {
+				font-size: 14px;
+				padding: 5px;
+			}
 		}
 	}
 }
