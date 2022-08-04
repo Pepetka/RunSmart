@@ -25,6 +25,7 @@
 			color: #6b6b6b;
 			text-transform: uppercase;
 			transform: skewX(-30deg);
+			transition: all 0.3s linear;
 
 			div {
 				transform: skewX(30deg);
@@ -37,6 +38,14 @@
 			&.active-filter {
 				background-color: $btn_color;
 				color: $light_text_color;
+
+				&:hover {
+					box-shadow: none;
+				}
+			}
+
+			&:hover {
+				box-shadow: 0 0 7px rgba(256, 0, 0, 0.7);
 			}
 		}
 	}

@@ -1,7 +1,5 @@
 .promo {
-	background-image: url("../img/first_screen/bg.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
+	background: url("../img/first_screen/bg.jpg") center (center/cover) no-repeat;
 	padding-top: 21px;
 	padding-bottom: 93px;
 	color: $light_text_color;

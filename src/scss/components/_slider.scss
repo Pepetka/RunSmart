@@ -57,6 +57,10 @@
 	&__next:hover {
 		right: -5px;
 	}
+
+	&__dots {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -84,6 +88,7 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			position: relative;
 		}
 
 		&__slides-wrapper {
@@ -92,20 +97,47 @@
 
 		&__prev,
 		&__next {
-			cursor: pointer;
-			height: 100%;
-			width: 10%;
+			height: 60%;
+			width: 50%;
 			border: none;
-			background-color: $bg_color;
-			position: relative;
+			position: absolute;
+			background-color: rgba(256, 256, 256, 0);
+			top: 50%;
+			transform: translateY(-50%);
+			z-index: 1;
+
+			img {
+				display: none;
+			}
 		}
 
-		&__prev:hover {
-			left: -5px;
+		&__prev {
+			left: 0;
+			right: auto;
 		}
 
-		&__next:hover {
-			right: -5px;
+		&__next {
+			left: auto;
+			right: 0;
+		}
+
+		&__dots {
+			margin: 0 auto;
+			margin-top: 10px;
+			width: 100px;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__dot {
+			background-color: #4b4b4b;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+		}
+
+		&__dot_active {
+			background-color: $btn_color;
 		}
 	}
 }

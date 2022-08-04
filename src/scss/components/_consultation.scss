@@ -1,7 +1,5 @@
 .consultation {
-	background-image: url("../img/consultation/bg.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
+	background: url("../img/consultation/bg.jpg") center (center/cover) no-repeat;
 	padding-top: 100px;
 	padding-bottom: 108px;
 	color: $light_text_color;
