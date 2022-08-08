@@ -530,15 +530,19 @@ document.addEventListener("DOMContentLoaded", () => {
 		})
 	}
 
-	window.addEventListener("scroll", () => {
-		if (window.scrollY > 1000) {
-			up.style.visibility = "visible"
-			up.style.opacity = "1"
-		} else {
-			up.style.visibility = "hidden"
-			up.style.opacity = "0"
-		}
-	})
+	window.addEventListener(
+		"scroll",
+		() => {
+			if (window.scrollY > 1000) {
+				up.style.visibility = "visible"
+				up.style.opacity = "1"
+			} else {
+				up.style.visibility = "hidden"
+				up.style.opacity = "0"
+			}
+		},
+		{ passive: true }
+	)
 
 	// animation
 
