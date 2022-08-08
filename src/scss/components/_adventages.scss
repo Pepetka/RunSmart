@@ -22,16 +22,28 @@
 		width: 277px;
 		line-height: 18px;
 
-		img {
-			width: 70px;
-		}
-
 		a {
 			color: $link_color;
 
 			&:hover {
 				color: $link_color;
 			}
+		}
+	}
+
+	&__icon {
+		width: 70px;
+
+		&_cup {
+			animation: cupAnim 1.5s ease-in-out 1s infinite;
+		}
+
+		&_heart {
+			animation: heartBeat 1.5s ease-in-out 1s infinite;
+		}
+
+		&_shoe {
+			animation: shoeAnim 1.5s ease-in-out 1s infinite;
 		}
 	}
 

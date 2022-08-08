@@ -226,7 +226,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	}
 
 	function showFiltered(cardsArr, data = "fitness") {
-		cardsArr.forEach((el) => {
+		cardsArr.forEach((el, i) => {
 			if (el.dataModal === data) {
 				cards.appendChild(el.content)
 			}
@@ -251,7 +251,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	const cardsArr = cardsInfo.map((info) => {
 		const div = document.createElement("div")
 		div.innerHTML = `
-			<div class="card" data-filter="${info.data}">
+			<div class="card animate__animated animate__fadeInRight" data-filter="${info.data}">
 				<div class="card__slider">
 					<div class="card__wrapper">
 						<div class="card__info">
@@ -539,4 +539,8 @@ document.addEventListener("DOMContentLoaded", () => {
 			up.style.opacity = "0"
 		}
 	})
+
+	// animation
+
+	new WOW().init()
 })

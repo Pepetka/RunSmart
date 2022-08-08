@@ -1,0 +1,77 @@
+@keyframes heartBeat {
+	from {
+		transform: scale(1);
+	}
+
+	60% {
+		transform: scale(1);
+	}
+
+	70% {
+		transform: scale(1.05);
+	}
+
+	80% {
+		transform: scale(1);
+	}
+
+	90% {
+		transform: scale(1.05);
+	}
+
+	to {
+		transform: scale(1);
+	}
+}
+
+@keyframes cupAnim {
+	from {
+		transform: translateX(0) rotateZ(0deg);
+	}
+
+	60% {
+		transform: translateX(10px) rotateZ(0deg);
+	}
+
+	70% {
+		transform: translateX(20px) rotateZ(10deg);
+	}
+
+	80% {
+		transform: translateX(10px) rotateZ(0deg);
+	}
+
+	90% {
+		transform: translateX(0) rotateZ(-10deg);
+	}
+
+	to {
+		transform: translateX(0) rotateZ(0deg);
+	}
+}
+
+@keyframes shoeAnim {
+	from {
+		transform: rotateZ(0deg);
+	}
+
+	60% {
+		transform: rotateZ(10deg);
+	}
+
+	70% {
+		transform: rotateZ(10deg);
+	}
+
+	80% {
+		transform: rotateZ(15deg);
+	}
+
+	90% {
+		transform: rotateZ(20deg);
+	}
+
+	to {
+		transform: rotateZ(0deg);
+	}
+}

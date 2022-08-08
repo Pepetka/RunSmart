@@ -27,7 +27,8 @@
 			transform: skewX(-30deg);
 			transition: all 0.3s linear;
 
-			div {
+			span {
+				display: inline-block;
 				transform: skewX(30deg);
 			}
 

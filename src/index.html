@@ -8,6 +8,7 @@
 	<title>RunSmart</title>
 	<link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -68,21 +69,21 @@
 
 				<div class="advantage__cards">
 					<div class="advantage__card">
-						<img src="./img/advantages/icon_cup.svg" alt="cup icon">
+						<img class="advantage__icon advantage__icon_cup" src="./img/advantages/icon_cup.svg" alt="cup icon">
 						<h3 class="advantage__card-header">Делимся опытом</h3>
 						Наши сотрудники всегда готовы поделиться своим опытом, так как сами бегают полумарафоны, переплыли
 						Босфор, готовятся к соревнованиям по триатлону!
 					</div>
 
 					<div class="advantage__card">
-						<img src="./img/advantages/icon_heart.svg" alt="heart icon">
+						<img class="advantage__icon advantage__icon_heart" src="./img/advantages/icon_heart.svg" alt="heart icon">
 						<h3 class="advantage__card-header">Заботимся о здоровье</h3>
 						Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и
 						Вашим близким!
 					</div>
 
 					<div class="advantage__card">
-						<img src="./img/advantages/icon_shoe.svg" alt="shoe icon">
+						<img class="advantage__icon advantage__icon_shoe" src="./img/advantages/icon_shoe.svg" alt="shoe icon">
 						<h3 class="advantage__card-header">Учим бегать</h3>
 						Помогаем с обучением правильной технике бега! Дружим с крупнейшей школой бега в России - <a href="#">I
 							LOVE RUNNING</a>.
@@ -121,7 +122,7 @@
 							<div class="form__info">!</div>
 							<div class="form__info-content">Заполните поле</div>
 						</div>
-						<button class="button button_form" data-modal="thanks" data-modal="thanks">заказать кОНСУЛЬТАЦИЮ</button>
+						<button class="button button_form" data-modal="thanks">заказать кОНСУЛЬТАЦИЮ</button>
 					</form>
 				</div>
 			</div>
@@ -167,13 +168,13 @@
 
 				<div class="catalog__filter">
 					<button data-filter="fitness" class="active-filter">
-						<div>Для фитнеса</div>
+						<span>Для фитнеса</span>
 					</button>
 					<button data-filter="running">
-						<div>для бега</div>
+						<span>для бега</span>
 					</button>
 					<button data-filter="triathlon">
-						<div>для триатлона</div>
+						<span>для триатлона</span>
 					</button>
 				</div>
 
@@ -186,7 +187,7 @@
 			<div class="container">
 				<h2 class="review__header">отзывы клиентов</h2>
 				<div class="review__wrapper">
-					<div class="review__card">
+					<div class="review__card wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
 						<img src="./img/review_sec/photo_1.png" alt="reviewer's photo">
 						<div class="review__content">
 							<div class="review__reviewer">
@@ -203,7 +204,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="review__card">
+					<div class="review__card wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
 						<img src="./img/review_sec/photo_2.png" alt="reviewer's photo">
 						<div class="review__content">
 							<div class="review__reviewer">
@@ -222,7 +223,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="review__card">
+					<div class="review__card wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
 						<img src="./img/review_sec/photo_3.png" alt="reviewer's photo">
 						<div class="review__content">
 							<div class="review__reviewer">
@@ -252,7 +253,7 @@
 	<footer class="contacts">
 		<iframe class="contacts__map"
 			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.406588532164!2d37.64509221588398!3d55.76880998055765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a6342a6010d%3A0x6b0f4771a8aa70a2!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDMsINCc0L7RgdC60LLQsCwgMTA3MDc4!5e0!3m2!1sru!2sru!4v1659600538147!5m2!1sru!2sru"
-			width="100%" height="630" style="border:0;" allowfullscreen="" loading="lazy"
+			height="630" style="border:0;" allowfullscreen="" loading="lazy"
 			referrerpolicy="no-referrer-when-downgrade"></iframe>
 		<div class="container">
 			<div class="contacts__wrapper">
@@ -275,7 +276,7 @@
 		</div>
 	</footer>
 
-	<div data-modal="consultation" class="modal">
+	<div data-modal="consultation" class="modal animate__animated animate__fadeIn">
 		<div class="modal__wrapper">
 			<div class="modal__header">
 				Просто заполните форму заявки
@@ -284,20 +285,20 @@
 
 			<form action="#" class="form" novalidate>
 				<div class="form__input-wrapper">
-					<input id="name" class="form__input" type="text" name="name">
-					<label for="name" class="form__label">Ваше имя</label>
+					<input id="consultation-name" class="form__input" type="text" name="name">
+					<label for="consultation-name" class="form__label">Ваше имя</label>
 					<div class="form__info">!</div>
 					<div class="form__info-content">Заполните поле</div>
 				</div>
 				<div class="form__input-wrapper">
-					<input id="phone" class="form__input" type="tel" name="phone">
-					<label for="phone" class="form__label">Ваш телефон</label>
+					<input id="consultation-phone" class="form__input" type="tel" name="phone">
+					<label for="consultation-phone" class="form__label">Ваш телефон</label>
 					<div class="form__info">!</div>
 					<div class="form__info-content">Заполните поле</div>
 				</div>
 				<div class="form__input-wrapper">
-					<input id="email" class="form__input" type="email" name="email">
-					<label for="email" class="form__label">Ваш E-mail</label>
+					<input id="consultation-email" class="form__input" type="email" name="email">
+					<label for="consultation-email" class="form__label">Ваш E-mail</label>
 					<div class="form__info">!</div>
 					<div class="form__info-content">Заполните поле</div>
 				</div>
@@ -309,7 +310,7 @@
 		</div>
 	</div>
 
-	<div data-modal="order" class="modal">
+	<div data-modal="order" class="modal animate__animated animate__fadeIn">
 		<div class="modal__wrapper">
 			<div class="modal__header">
 				Ваш заказ:
@@ -318,20 +319,20 @@
 
 			<form action="#" class="form" novalidate>
 				<div class="form__input-wrapper">
-					<input id="name" class="form__input" type="text" name="name">
-					<label for="name" class="form__label">Ваше имя</label>
+					<input id="order-name" class="form__input" type="text" name="name">
+					<label for="order-name" class="form__label">Ваше имя</label>
 					<div class="form__info">!</div>
 					<div class="form__info-content">Заполните поле</div>
 				</div>
 				<div class="form__input-wrapper">
-					<input id="phone" class="form__input" type="tel" name="phone">
-					<label for="phone" class="form__label">Ваш телефон</label>
+					<input id="order-phone" class="form__input" type="tel" name="phone">
+					<label for="order-phone" class="form__label">Ваш телефон</label>
 					<div class="form__info">!</div>
 					<div class="form__info-content">Заполните поле</div>
 				</div>
 				<div class="form__input-wrapper">
-					<input id="email" class="form__input" type="email" name="email">
-					<label for="email" class="form__label">Ваш E-mail</label>
+					<input id="order-email" class="form__input" type="email" name="email">
+					<label for="order-email" class="form__label">Ваш E-mail</label>
 					<div class="form__info">!</div>
 					<div class="form__info-content">Заполните поле</div>
 				</div>
@@ -343,7 +344,7 @@
 		</div>
 	</div>
 
-	<div data-modal="thanks" class="modal modal_thanks">
+	<div data-modal="thanks" class="modal modal_thanks animate__animated animate__fadeIn">
 		<div class="modal__wrapper">
 			<div class="modal__header">
 				Спасибо за вашу заявку!
@@ -357,5 +358,6 @@
 
 	<a href="#up" class="up"></a>
 
+	<script src="./js/wow.min.js"></script>
 	<script src="./js/script.js"></script>
 </body>
