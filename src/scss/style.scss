@@ -1,6 +1,8 @@
+@import "./libs/normalize.min";
 @import "./base/fonts";
 @import "./base/var";
 @import "./base/animations";
+@import "./libs/animate";
 
 body {
 	font-family: "MuseoModerno", sans-serif;
