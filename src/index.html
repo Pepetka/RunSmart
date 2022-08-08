@@ -12,7 +12,7 @@
 </head>
 
 <body>
-	<div class="promo">
+	<div class="promo" id="up">
 		<div class="container">
 			<header class="header">
 				<div class="header__logo">
@@ -102,10 +102,25 @@
 						Просто заполните форму заявки<br>и мы перезвоним вам в течении 10 минут
 					</div>
 
-					<form action="#" class="form">
-						<input required class="form__input" type="text" placeholder="Ваше имя" name="name">
-						<input required class="form__input" type="tel" placeholder="Ваш телефон" name="phone">
-						<input required class="form__input" type="email" placeholder="Ваш E-mail" name="email">
+					<form action="#" class="form" novalidate>
+						<div class="form__input-wrapper">
+							<input id="name" class="form__input" type="text" name="name">
+							<label for="name" class="form__label">Ваше имя</label>
+							<div class="form__info">!</div>
+							<div class="form__info-content">Заполните поле</div>
+						</div>
+						<div class="form__input-wrapper">
+							<input id="phone" class="form__input" type="tel" name="phone">
+							<label for="phone" class="form__label">Ваш телефон</label>
+							<div class="form__info">!</div>
+							<div class="form__info-content">Заполните поле</div>
+						</div>
+						<div class="form__input-wrapper">
+							<input id="email" class="form__input" type="email" name="email">
+							<label for="email" class="form__label">Ваш E-mail</label>
+							<div class="form__info">!</div>
+							<div class="form__info-content">Заполните поле</div>
+						</div>
 						<button class="button button_form" data-modal="thanks" data-modal="thanks">заказать кОНСУЛЬТАЦИЮ</button>
 					</form>
 				</div>
@@ -267,10 +282,25 @@
 				<span>и мы перезвоним вам в течении 10 минут</span>
 			</div>
 
-			<form action="#" class="form">
-				<input required class="form__input" type="text" placeholder="Ваше имя" name="name">
-				<input required class="form__input" type="tel" placeholder="Ваш телефон" name="phone">
-				<input required class="form__input" type="email" placeholder="Ваш E-mail" name="email">
+			<form action="#" class="form" novalidate>
+				<div class="form__input-wrapper">
+					<input id="name" class="form__input" type="text" name="name">
+					<label for="name" class="form__label">Ваше имя</label>
+					<div class="form__info">!</div>
+					<div class="form__info-content">Заполните поле</div>
+				</div>
+				<div class="form__input-wrapper">
+					<input id="phone" class="form__input" type="tel" name="phone">
+					<label for="phone" class="form__label">Ваш телефон</label>
+					<div class="form__info">!</div>
+					<div class="form__info-content">Заполните поле</div>
+				</div>
+				<div class="form__input-wrapper">
+					<input id="email" class="form__input" type="email" name="email">
+					<label for="email" class="form__label">Ваш E-mail</label>
+					<div class="form__info">!</div>
+					<div class="form__info-content">Заполните поле</div>
+				</div>
 				<button class="button button_form" data-modal="thanks">заказать кОНСУЛЬТАЦИЮ</button>
 			</form>
 		</div>
@@ -286,10 +316,25 @@
 				<span>Пульсометр Polar FT1</span>
 			</div>
 
-			<form action="#" class="form">
-				<input required class="form__input" type="text" placeholder="Ваше имя" name="name">
-				<input required class="form__input" type="tel" placeholder="Ваш телефон" name="phone">
-				<input required class="form__input" type="email" placeholder="Ваш E-mail" name="email">
+			<form action="#" class="form" novalidate>
+				<div class="form__input-wrapper">
+					<input id="name" class="form__input" type="text" name="name">
+					<label for="name" class="form__label">Ваше имя</label>
+					<div class="form__info">!</div>
+					<div class="form__info-content">Заполните поле</div>
+				</div>
+				<div class="form__input-wrapper">
+					<input id="phone" class="form__input" type="tel" name="phone">
+					<label for="phone" class="form__label">Ваш телефон</label>
+					<div class="form__info">!</div>
+					<div class="form__info-content">Заполните поле</div>
+				</div>
+				<div class="form__input-wrapper">
+					<input id="email" class="form__input" type="email" name="email">
+					<label for="email" class="form__label">Ваш E-mail</label>
+					<div class="form__info">!</div>
+					<div class="form__info-content">Заполните поле</div>
+				</div>
 				<button class="button button_form" data-modal="thanks">Купить</button>
 			</form>
 		</div>
@@ -309,6 +354,8 @@
 		<div class="modal__close">
 		</div>
 	</div>
+
+	<a href="#up" class="up"></a>
 
 	<script src="./js/script.js"></script>
 </body>

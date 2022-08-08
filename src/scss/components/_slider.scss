@@ -97,28 +97,7 @@
 
 		&__prev,
 		&__next {
-			height: 60%;
-			width: 50%;
-			border: none;
-			position: absolute;
-			background-color: rgba(256, 256, 256, 0);
-			top: 50%;
-			transform: translateY(-50%);
-			z-index: 1;
-
-			img {
-				display: none;
-			}
-		}
-
-		&__prev {
-			left: 0;
-			right: auto;
-		}
-
-		&__next {
-			left: auto;
-			right: 0;
+			display: none;
 		}
 
 		&__dots {
