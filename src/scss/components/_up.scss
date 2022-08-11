@@ -3,11 +3,15 @@
 	opacity: 0;
 	width: 40px;
 	height: 40px;
-	background-color: #c70101;
+	border-radius: 50%;
 	display: block;
-	mask-image: url("../img/up.svg");
 	position: fixed;
 	right: 20px;
 	bottom: 20px;
 	transition: all 0.3s ease-in-out;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+
+	img {
+		width: 100%;
+	}
 }

@@ -27,7 +27,7 @@ gulp.task("styles", function () {
 })
 
 gulp.task("watch", function () {
-	gulp.watch("src/scss/**/*.+(scss|sass|css)", gulp.parallel("styles"))
+	gulp.watch("src/scss/**/*.{scss,sass,css}", gulp.parallel("styles"))
 	gulp.watch("src/*.html", gulp.parallel("html"))
 	gulp.watch("src/js/**/*.js").on("change", browserSync.reload)
 })
@@ -48,11 +48,11 @@ gulp.task("fonts", function () {
 })
 
 gulp.task("icons", function () {
-	return gulp.src("src/img/**/*.svg").pipe(gulp.dest("dist/img"))
+	return gulp.src("src/img/**/*.{svg,ico}").pipe(gulp.dest("dist/img"))
 })
 
 gulp.task("img", function () {
-	return gulp.src("src/img/**/*.jpg").pipe(imagemin()).pipe(gulp.dest("dist/img"))
+	return gulp.src("src/img/**/*.{jpg,png}").pipe(imagemin()).pipe(gulp.dest("dist/img"))
 })
 
 gulp.task("mailer", function () {
